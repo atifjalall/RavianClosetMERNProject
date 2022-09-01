@@ -1,0 +1,165 @@
+/* .contactContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  position: fixed;
+}
+
+.mailBtn {
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 2s forwards;
+}
+
+.mailBtn > button {
+  text-decoration: none;
+  font: 200 2vmax "Roboto";
+  cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+  padding: 2vmax;
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+} */
+
+
+.aboutSectionGradient {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(78, 81, 255),
+    rgb(74, 137, 189)
+  );
+}
+
+.aboutSectionContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  height: 90vh !important;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.aboutSectionContainer > h5,h1 {
+  font: "Roboto"; 
+  color:  rgba(0, 0, 0, 0.733) !important;
+   
+ }
+.btn{
+  width: max-content;
+  display: inline-block;
+  color: #4db5ff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #4db5ff;
+  transition: all 400ms ease;
+
+}
+
+.btn:hover{
+  background: #fff;
+  color: #1f1f38;
+  border-color: transparent;
+}
+
+.btn-primary{
+  background: #4db5ff;
+  color: #1f1f38;
+}
+.container.contact__container{
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option{
+  background: #4db5ff;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--trasition);
+  width: 9rem;
+  color: #1f1f38;
+}
+
+.contact__option:hover{
+background: transparent;
+border-color: rgba(77,181,255,0.4);
+transition: 1s;
+}
+
+.contact__option-icon{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a{
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.contact__option h5{
+  color: rgba (255,255,255,0.6);
+}
+/*===================FORM=======================*/
+form{
+  padding-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid #4db5ff;
+  resize: none;
+  color: black;
+}
+
+
+
+/*======================== MEDIA QUERIES (MEDIUM DEVICES) =====================*/
+@media screen and (max-width: 1024px){
+  
+  .container.contact__container{
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      
+  }
+  
+  }
+
+/*======================== MEDIA QUERIES (SMALL DEVICES) =====================*/
+@media screen and (max-width: 600px){
+  
+  .container.contact__container{
+      width: var(--containerwidth-sm);
+  }
+  }
