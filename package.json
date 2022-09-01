@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "16.16"
+    "node": "16.16.0",
+    "npm": "8.11.0"
   },
   "main": "backend/server.js",
   "scripts": {
@@ -15,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
     "cloudinary": "^1.30.1",
